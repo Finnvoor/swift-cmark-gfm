@@ -178,9 +178,6 @@ if(CMARK_SHARED OR CMARK_STATIC)
   install(EXPORT cmark-gfm DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake)
 endif()
 
-export(TARGETS ${PROGRAM} ${LIBRARY} ${STATICLIBRARY}
-    FILE ${CMAKE_CURRENT_BINARY_DIR}/CMarkExports.cmake)
-
 # Feature tests
 include(CheckIncludeFile)
 include(CheckCSourceCompiles)

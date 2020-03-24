@@ -1,5 +1,21 @@
-cmark-gfm
+swift-cmark-gfm
 =========
+`swift-cmark-gfm` is a SwiftPM wrapper around `cmark-gfm`, similiar to [swift-cmark](https://github.com/apple/swift-cmark).
+
+To install it into a project, simply add it as a dependency within your `Package.swift` manifest:
+```swift
+let package = Package(
+    ...
+    dependencies: [
+        .package(url: "https://github.com/Finnvoor/swift-cmark-gfm.git", from: "1.0.0")
+    ],
+    ...
+)
+```
+
+The rest of the README is preserved as-is from the upstream source.
+
+---
 
 [![Build Status]](https://travis-ci.org/github/cmark-gfm)
 [![Windows Build Status]](https://ci.appveyor.com/project/github/cmark)

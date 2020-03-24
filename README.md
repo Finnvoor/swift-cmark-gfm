@@ -13,6 +13,11 @@ let package = Package(
 )
 ```
 
+Then import InkView wherever you’d like to use it:
+```swift
+import cmark_gfm
+```
+
 The rest of the README is preserved as-is from the upstream source.
 
 ---

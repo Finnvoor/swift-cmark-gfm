@@ -22,6 +22,11 @@
 #include "houdini.h"
 #include "buffer.h"
 #include "footnotes.h"
+#include "autolink.h"
+#include "strikethrough.h"
+#include "table.h"
+#include "tagfilter.h"
+#include "tasklist.h"
 
 #define CODE_INDENT 4
 #define TAB_STOP 4
@@ -638,6 +643,11 @@ static cmark_node *finalize_document(cmark_parser *parser) {
 cmark_node *cmark_parse_file(FILE *f, int options) {
   unsigned char buffer[4096];
   cmark_parser *parser = cmark_parser_new(options);
+  cmark_parser_attach_syntax_extension(parser, create_autolink_extension());
+  cmark_parser_attach_syntax_extension(parser, create_strikethrough_extension());
+  cmark_parser_attach_syntax_extension(parser, create_table_extension());
+  cmark_parser_attach_syntax_extension(parser, create_tagfilter_extension());
+  cmark_parser_attach_syntax_extension(parser, create_tasklist_extension());
   size_t bytes;
   cmark_node *document;
 
@@ -656,6 +666,11 @@ cmark_node *cmark_parse_file(FILE *f, int options) {
 
 cmark_node *cmark_parse_document(const char *buffer, size_t len, int options) {
   cmark_parser *parser = cmark_parser_new(options);
+  cmark_parser_attach_syntax_extension(parser, create_autolink_extension());
+  cmark_parser_attach_syntax_extension(parser, create_strikethrough_extension());
+  cmark_parser_attach_syntax_extension(parser, create_table_extension());
+  cmark_parser_attach_syntax_extension(parser, create_tagfilter_extension());
+  cmark_parser_attach_syntax_extension(parser, create_tasklist_extension());
   cmark_node *document;
 
   S_parser_feed(parser, (const unsigned char *)buffer, len, true);

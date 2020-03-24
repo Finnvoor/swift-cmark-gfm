@@ -16,6 +16,8 @@ let package = Package(
 The rest of the README is preserved as-is from the upstream source.
 
 ---
+cmark-gfm
+========
 
 [![Build Status]](https://travis-ci.org/github/cmark-gfm)
 [![Windows Build Status]](https://ci.appveyor.com/project/github/cmark)

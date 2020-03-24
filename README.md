@@ -13,7 +13,7 @@ let package = Package(
 )
 ```
 
-Then import InkView wherever you’d like to use it:
+Then import cmark_gfm wherever you’d like to use it:
 ```swift
 import cmark_gfm
 ```

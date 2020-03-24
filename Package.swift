@@ -8,6 +8,6 @@ let package = Package(
         .library(name: "cmark-gfm", targets: ["cmark-gfm"]),
     ],
     targets: [
-        .target(name: "cmark-gfm", path: "src", exclude: ["main.c"])
+        .target(name: "cmark-gfm")
     ]
 )

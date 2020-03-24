@@ -1,6 +1,6 @@
 swift-cmark-gfm
 =========
-`swift-cmark-gfm` is a SwiftPM wrapper around `cmark-gfm`, similiar to [swift-cmark](https://github.com/apple/swift-cmark).
+`swift-cmark-gfm` is a SwiftPM wrapper around [cmark-gfm](https://github.com/github/cmark-gfm), similiar to [swift-cmark](https://github.com/apple/swift-cmark).
 
 To install it into a project, simply add it as a dependency within your `Package.swift` manifest:
 ```swift

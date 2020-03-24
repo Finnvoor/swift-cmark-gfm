@@ -21,11 +21,6 @@ import cmark_gfm
 The rest of the README is preserved as-is from the upstream source.
 
 ---
-cmark-gfm
-========
-
-[![Build Status]](https://travis-ci.org/github/cmark-gfm)
-[![Windows Build Status]](https://ci.appveyor.com/project/github/cmark)
 
 `cmark-gfm` is an extended version of the C reference implementation of
 [CommonMark], a rationalized version of Markdown syntax with a spec.  This
